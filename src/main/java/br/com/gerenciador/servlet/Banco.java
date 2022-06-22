@@ -38,4 +38,14 @@ public class Banco {
 			}
 		}	
 	}
+
+	public Empresa buscaEmpresaPelaId(Integer id) {
+		for (Empresa empresa : list) {
+			if(empresa.getId() == id) {
+				return empresa;
+			}
+			
+		}
+		return null;
+	}
 }
